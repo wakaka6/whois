@@ -953,7 +953,7 @@ class WhoisJp(WhoisEntry):
     regex = {
         "domain_name": r".*\[(?:Domain Name|ドメイン名)\]\s*(.+)",
         "registrant_org": r".*\[(?:Organization|Registrant)\](.+)",
-        "creation_date": r"\[(?:Registered Date|Created on|登録年月日)\]\s*(.+)",
+        "creation_date": r"\[(?:Registered Date|Created on|登録年月日|接続年月日)\][\t\f\r ]*(.+)",
         "expiration_date": r"\[(?:Expires on|有効期限)\]\s*(.+)",
         "name_servers": r".*\[(?:Name Server|ネームサーバ)\]\s*(.+)",  # list of name servers
         "updated_date": r"\[(?:Last Updated|最終更新)?\]\s*(.+)",
